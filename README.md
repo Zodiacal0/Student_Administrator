@@ -1,5 +1,39 @@
 # API de Sistema de Gestión de Alumnos
 
+## 📖 Descripción
+Student Administrator API permite la gestión de usuarios y materias dentro de un sistema de administración escolar. Proporciona funciones para registrar usuarios, inscribir estudiantes en materias, gestionar información de materias y manejar autenticación de usuarios.
+
+---
+
+## 🔐 **Autenticación**
+- **Registrar Usuario** → Registra un nuevo usuario en la plataforma.
+- **Iniciar Sesión** → Permite que un usuario inicie sesión en la aplicación.
+
+---
+
+## 👤 **Gestión de Usuarios**
+- **Buscar Usuario por ID** → Obtiene la información de un usuario específico.
+- **Obtener Lista de Usuarios** → Devuelve todos los usuarios registrados en el sistema.
+- **Actualizar Información de Usuario** → Modifica los datos de un usuario existente.
+- **Eliminar Usuario** → Cambia el estado del usuario para indicar que ha sido eliminado.
+
+---
+
+## 📚 **Gestión de Materias**
+- **Agregar Materia** → Permite registrar una nueva materia en el sistema.
+- **Inscribir Usuario en Materia** → Inscribe a un usuario en una materia específica.
+- **Actualizar Información de Materia** → Modifica los datos de una materia existente.
+- **Desinscribir Usuario de Materia** → Remueve a un usuario de una materia en la que estaba inscrito.
+- **Eliminar Materia** → Elimina una materia del sistema.
+- **Obtener Materias de un Usuario** → Devuelve la lista de materias en las que un usuario está inscrito.
+
+---
+
+## 🚀 **Uso de la API**
+Para usar esta API, realiza solicitudes HTTP a las rutas especificadas utilizando herramientas como Postman o cURL. Asegúrate de enviar los datos en formato JSON cuando sea necesario.
+
+---
+
 ## Endpoints de la API
 
 ### Autenticación
