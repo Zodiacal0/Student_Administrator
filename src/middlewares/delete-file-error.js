@@ -3,7 +3,7 @@ import {join} from "path";
 
 export const deleteFileOnError = async(err, req, res, next) =>{
     if(req.file && req.filePath){
-        const filePath = join(requestAnimationFrame.filePath, req.file.filename);
+        const filePath = join(req.filePath, req.file.filename);
         try{
             await fs.unlink(filePath);
         }catch(unlinkError){

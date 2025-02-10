@@ -11,8 +11,7 @@ export const registerValidator = [
     body("email").custom(emailExist),
     body("card").optional().isLength({max:7}).withMessage("The card must be have 7 characters"),
     body("matters").optional().isMongoId().withMessage("This Id isn't valid"),
-    body("role").not().isEmpty().withMessage("Role is required"),
-    body("role").isIn(["STUDENT_ROLE", "TEACHER_ROLE"]).withMessage("The role must be Student or Professor"),
+    body("role").optional().isIn(["STUDENT_ROLE", "TEACHER_ROLE"]).withMessage("The role must be Student or Professor"),
     validationsFields
 ];
 

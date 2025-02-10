@@ -15,7 +15,7 @@ router.get(
     getUsers
 )
 
-router.delete(
+router.patch(
     "/deleteUser/:uid",
     deleteUserValidator, 
     deleteUser
@@ -29,9 +29,10 @@ router.patch(
 )
 
 router.patch(
-    "/updateInfoUser/:updateUid/:keyUid",
+    "/updateInfoUser/:updateUid/",
     updateUserValidator,
     updateUser
 )
+
 
 export default router;

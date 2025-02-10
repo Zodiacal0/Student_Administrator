@@ -20,5 +20,14 @@ export const uidMatterExist = async(uid = "") =>{
     const exist = await Matter.findById(uid);
     if(!exist){
         throw new Error("No existe el ID proporcionado");
-    }
-}
+    };
+};
+
+
+
+
+export const limitArray = (limit) =>{
+    return (val) => {
+        return val.length <= limit;
+    };
+};

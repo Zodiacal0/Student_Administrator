@@ -1,4 +1,5 @@
 import { Schema, model } from "mongoose";
+import { limitArray } from "../helpers/db-validators.js";
 
 const userSchema = new Schema({
     name: {
@@ -37,9 +38,11 @@ const userSchema = new Schema({
         sparse: true  
     },
     matters: {
-        type: [Schema.Types.ObjectId], 
-        ref: "Matters",
-        default: null
+        type :[{
+            type: Schema.Types.ObjectId, 
+            ref: "Matters",
+        }],
+        validate: [limitArray(3), "Cannot enroll in more than 3 matters"]
     },
     role: {
         type: String,
