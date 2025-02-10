@@ -84,6 +84,7 @@
 - **URL:** `/studentAdministrator/v1/matter/enrollUser/:uid`
 - **Parámetros:**
   - `uid`: ID de la materia a la que se desea inscribir al usuario
+  - `userUid`: ID del usuario que se va a inscribir
 - **Cuerpo (JSON):**
 ```json
 {
@@ -96,6 +97,7 @@
 - **URL:** `/studentAdministrator/v1/matter/updateInfoMatter/:uid`
 - **Parámetros:**
   - `uid`: ID de la materia a actualizar
+  - `KeyUserUid`: ID del usuario con permiso para editar la materia (Profesor)
 - **Cuerpo (JSON):**
 ```json
 {
@@ -110,6 +112,7 @@
 - **URL:** `/studentAdministrator/v1/matter/deleteUserFromMatter/:uid`
 - **Parámetros:**
   - `uid`: ID de la materia
+  - `KeyUserUid`: ID del usuario con permiso para editar la materia (Profesor)
 - **Cuerpo (JSON):**
 ```json
 {
@@ -123,6 +126,7 @@
 - **URL:** `/studentAdministrator/v1/matter/deleteMatter/:uid`
 - **Parámetros:**
   - `uid`: ID de la materia a eliminar
+  - `KeyUserUid`: ID del usuario con permiso para editar la materia (Profesor)
 - **Cuerpo (JSON):**
 ```json
 {
